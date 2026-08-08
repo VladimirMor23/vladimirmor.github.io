@@ -1,0 +1,646 @@
+@media (min-width: 377px) and (max-width: 767px) {
+     .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header{
+        padding-top: 32px;
+        border-bottom: none;
+    }
+    .logo__img{
+        width: 99px;
+    }
+    .nav__item{
+        display: none;
+    }
+    .header-input{
+        display: none;
+    }
+    .nav__main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+    .logo__img{
+        width: 99px;
+    }
+    .main{
+        margin-top: 29px;
+    &__title{
+        width: 100%;
+        min-height: 177px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: clamp(46px, 2vw, 48px);
+        line-height: 1.2;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__text{
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__link{
+    /* центрирование без жёсткой ширины */
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+    }
+    .mebel {
+    padding-top: 32px;
+    
+    &__title{
+        width: 178px;
+        height: 29px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+     &__div {
+        margin-top: 32px;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+     &__box1{
+        width: 343px;
+        height: 243px;
+        font-size: 28px;
+    }
+     &__box2{
+        width: 343px;
+        height: 243px;
+        font-size: 28px;
+    }
+     &__box{
+        width: 343px;
+        height: 374px;
+        font-size: 28px;
+     }
+}
+        
+    .card {
+        margin-top: 32px;
+    }
+    .card__content{
+        margin-bottom: 36px;
+    }
+    .card__title{
+        width: 342.91px;
+        height: 58px;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+    .product__img {
+        
+        width: 100%;
+    }
+
+    .product__title{
+        font-size: 18px;
+        padding-top: 4px;
+        padding-bottom: 8px; 
+        margin-top: 0%;   
+        margin-bottom: 0%;
+    }
+
+    .product__price{
+        font-size: 18px; 
+        
+    }
+    .product__discount{
+        font-size: 18px; 
+
+    }
+    .product__description {
+            font-size: 14px;
+            line-height: 17px;
+            color: #888888;
+            margin-bottom: 8px;
+        }
+    .catalog-link{
+            margin-bottom: 36px;
+            margin-top: 31px;
+    }
+    .footer__content {
+        width: 759px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 100px;
+    }
+    .footer__list{
+        padding-bottom: 70px;
+    }
+    .footer__input{
+        box-sizing: border-box;
+        width: 260px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        border-radius: 16px;
+    }
+    .cart__text {
+        max-width: 343px;
+        width: 100%;
+        height: 59px;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 82px;
+    }
+    .order__text{
+        padding-top: 8px;
+        padding-bottom: 15px;
+    }
+    .order__menu {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+         line-height: 1.5;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .order__left {
+        gap: 16px;
+    }
+    .order__btn-purchase {
+        max-width: 166px;
+        width: 100%;
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        font-size: 12px;
+        gap: 14px;
+    }
+    .order__btn-cart {
+        max-width: 166px;
+        width: 100%;
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        font-size: 12px;
+    }
+    .footer__content {
+        max-width: 759px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        -moz-column-gap: 100px;
+        column-gap: 100px;
+    } 
+    .footer__form {
+    margin-top: 69px;
+    } 
+    /*каталог*/
+    .block{
+        padding-top: 82px;
+        padding-bottom: 170px;
+    }
+    .block__title{
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .link {
+        display: flex;
+        flex-direction: column;
+    }
+    .link-ct{
+        font-size: 14px;
+    }
+    .conteiner {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+         margin-top: 22px;
+    }
+    .fulter-button-wrapper {
+        padding-top: 10px;
+    }
+    .select-css2 {
+        width: 204px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .fulter-button {
+        width: 164px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px;
+        color: #000000;
+    }
+    .filtering-form {
+        width: 100%;
+        height: 910px;
+        left: -1px;
+    }
+    .filtering-form__content-wapper {
+        width: 190px;
+        height: 830px;
+        gap: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 36px;
+    }
+    .filtering-form__button {
+        left: 1px;
+
+    }  /*Каталог*/
+
+}
+
+@media (max-width: 376px) {
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header{
+        padding-top: 32px;
+        border-bottom: none;
+    }
+    .logo__img{
+        width: 99px;
+    }
+    .nav__item{
+        display: none;
+    }
+    .header-input{
+        display: none;
+    }
+    .nav__main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+    .logo__img{
+        width: 99px;
+    }
+    .main{
+        margin-top: 29px;
+    &__title{
+        width: 100%;
+        max-width: 343px;
+        min-height: 177px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: clamp(44px, 2vw, 48px);
+        line-height: 1.2;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__text{
+        width: 100%;
+        max-width: 343px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__link{
+    /* центрирование без жёсткой ширины */
+        width: 100%;
+        max-width: 343px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+    }
+    .mebel {
+    padding-top: 32px;
+    
+    &__title{
+        width: 178px;
+        height: 29px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+     &__div {
+        margin-top: 32px;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+     &__box1{
+        max-width: 343px;
+        width: 100%;
+        height: 243px;
+        font-size: 28px;
+    }
+     &__box2{
+        max-width: 343px;
+        width: 100%;
+        height: 243px;
+        font-size: 28px;
+    }
+     &__box{
+        max-width: 343px;
+        width: 100%;
+        height: 374px;
+        font-size: 28px;
+     }
+}
+        
+    .card {
+        margin-top: 32px;
+    }
+    .card__content{
+        margin-bottom: 36px;
+    }
+    .card__title{
+        max-width: 342;
+        width: 100%;
+        height: 58px;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+    .product__img {
+        max-width: 342px;
+        width: 100%;
+    }
+
+    .product__title{
+        font-size: 18px;
+        padding-top: 4px;
+        padding-bottom: 8px; 
+        margin-top: 0%;   
+        margin-bottom: 0%;
+    }
+
+    .product__price{
+        font-size: 18px; 
+        
+    }
+    .product__discount{
+        font-size: 18px; 
+
+    }
+    .product__description {
+            font-size: 14px;
+            line-height: 17px;
+            color: #888888;
+            margin-bottom: 8px;
+        }
+    .catalog-link{
+            margin-bottom: 36px;
+            margin-top: 31px;
+    }
+    .footer__content {
+        max-width: 376px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 100px;
+    }
+    .footer__list{
+        margin-bottom: 70px;
+    }
+    .footer__div2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 70px;
+}
+    .footer__input{
+        box-sizing: border-box;
+        width: 260px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        border-radius: 16px;
+    }
+
+/* Католог */
+    
+    .block{
+        padding-top: 82px;
+        padding-bottom: 170px;
+    }
+    .block__title{
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .link {
+        display: flex;
+        flex-direction: column;
+    }
+    .link-ct{
+        font-size: 14px;
+    }
+    .conteiner {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+         margin-top: 22px;
+    }
+    .fulter-button-wrapper {
+        padding-top: 10px;
+    }
+    .select-css2 {
+        max-width: 204px;
+        width: 100%;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .fulter-button {
+          
+        max-width: 182px;    
+        box-sizing: border-box;            /* теперь это реально применится */
+        font-size: 14px;
+        font-style: normal;
+        line-height: 17px;
+        color: #000000;
+        margin-right: 0%;
+    }
+    .filtering-form {
+        width: 100%;
+        height: 910px;
+        left: -1px;
+    }
+    .filtering-form__content-wapper {
+        width: 190px;
+        height: 830px;
+        gap: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 36px;
+    }
+    .filtering-form__button {
+        left: 1px;
+
+    }
+    /*КОРЗИНА*/
+    .cart-pg{
+        min-height: 300px;
+        
+
+    }
+    .cart__text{
+        max-width: 343px;
+        width: 100%;
+        height: 59px;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 82px;
+    }
+    .order__name-box {
+        display: none;
+    }
+    .order__info {
+       max-width: 253px;
+       width: 100%;
+    }
+    .order__text{
+        padding-top: 8px;
+        padding-bottom: 15px;
+    }
+
+    .order__item{
+        max-width: 343px;
+        width: 100%;
+
+    }
+    .order__img {
+        display: none;
+        
+    }
+    .order__menu{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .order__price {
+        font-size: 14px;
+    }
+    
+    .order__btn-cart {  
+        max-width: 166px;
+        width: 100%;
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        font-size: 12px;
+    } 
+    .order__btn-purchase{
+        max-width: 166px;
+        width: 100%;
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        font-size: 12px;
+        gap: 14px;
+    }
+    /*
+    .order__form {
+        gap: 64px;
+        width: auto;
+        height: 556px;
+        background: #F7F6F6;
+        border-radius: 20px;
+        margin-top: 48px;
+    }
+    .order__form-cart {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        max-width: 283px;
+        height: 40px;
+        border: 1px solid #040404;
+        border-radius: 20px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        min-width: 0
+    }    */
+    .order__form {
+        gap: 64px;
+        width: 100%;                /* на всю ширину родителя */
+        max-width: 379px;           /* ограничение для десктопа */
+        height: auto;                /* вместо жёсткой 556px */
+        min-height: 556px;           /* если нужна минимальная высота */
+        background: #f7f6f6;
+        border-radius: 20px;
+        margin-top: 48px;
+        box-sizing: border-box;
+}
+
+.order__form-cart {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+
+        width: 100%;
+        max-width: 283px;            /* не шире 283px на больших экранах */
+        min-width: 0;                /* разрешает сжиматься, если места мало */
+
+        height: 40px;                /* фиксированная высота кнопки — ок */
+        border: 1px solid #040404;
+        border-radius: 20px;
+
+        /* эти свойства лучше убрать, они тут лишние и могут конфликтовать */
+        flex: none;
+        order: 1;
+        align-self: auto;            /* вместо stretch */
+        flex-grow: 0;
+}    
+
+
+}

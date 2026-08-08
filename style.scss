@@ -1,0 +1,594 @@
+@use 'katalog';
+@use 'card';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+a,
+input,
+button{
+   font-family: "Montserrat", "Arial" ; 
+}
+body{
+    font-size: 16px;
+     font-family: "Montserrat", "Arial" ; 
+}
+.header{
+    height: 76px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+}
+.header-input::placeholder{
+    color: #ffffff;
+}
+.header-input{
+    border-radius: 20px;
+    max-width: 288px;
+    width: 100%;
+    height: 41px;
+    border: 1px solid #FFFFFF   ;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: normal;
+    box-sizing: border-box;
+    outline: none;
+    padding: 11px 32px;
+    background-color: transparent;
+
+}
+         
+
+.hero-pg{
+    background-image: url(./img/header-pg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.logo{
+    margin-top: 13px;
+}
+
+.main{
+    margin-top: 140px;
+    padding-bottom: 363px;
+    color: #FFFFFF;
+    &__title{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    max-width: 792px;
+    margin-bottom: 16px;
+    }
+    &__text{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 19px;
+}}
+.main__link{
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    display: inline-block;
+}
+a.main__link:hover{
+    text-decoration: underline;
+}
+
+.nav{
+    display: flex;
+    gap: 32px;
+    &__item{
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}}
+.nav__main{
+    display: none;
+}
+
+a.nav__item:hover{
+    text-decoration: underline;
+}
+.nav__svg {
+  display: block;                /* или inline-block — чтобы transform работал предсказуемо */
+  width: 24px;                   /* фиксируем размер */
+  height: 24px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-origin: center;      /* масштабируем из центра */
+}
+
+.nav__svg:hover {
+  transform: scale(1.15);       /* мягкое увеличение, без «наезда» на соседей */
+}
+
+
+/*ЗАголовок МЕБЕЛЬ ДЛЯ ...*/
+.mebel{
+    padding-top: 63px;
+
+    &__title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    color: #000000;
+    flex-wrap: wrap;
+    }
+    &__div{
+    margin-top: 32px;
+    display: grid;
+    gap: 31px;
+    grid-template-columns: repeat(12, 1fr);
+    }
+    &__box-big{
+    height: 415px;
+    grid-column: span 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    color: #FFFFFF;
+    font-weight: 600;
+     }
+     &__box{
+    height: 415px;
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    color: #FFFFFF;
+    font-weight: 600;
+    }
+    &__box1{
+    background-image: url(img/mebel1.jpg);
+    }
+    &__box2{
+     background-image: url(./img/mebel2.jpg);
+    }
+    &__box3{
+    background-image: url(./img/mebel3.jpg);
+    }
+    &__box4{
+    background-image: url(./img/mebel4.jpg);
+    }
+    &__box5{
+    background-image: url(./img/mebel5.jpg);
+}}
+
+/*Заголовку h2(Специальные предложения*/
+
+.card{
+    margin-top: 54px;
+    
+    &__content{
+    gap: 30px;
+    margin-bottom: 53px;
+    display: grid;
+    grid-template-columns: repeat(12, 4fr);
+    }
+    &__title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    color: #000000;
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+
+}
+}
+
+
+
+.product{
+    max-width: 379px;
+    width: 100%;
+    grid-column: span 4;
+    position: relative;
+    &__img{
+    display: block;
+    }
+    
+    &__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    }
+    &__description{
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    margin-bottom: 13px;
+    }
+    &__price{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+    
+    }
+    &__box-price{
+    display: flex;
+    gap: 32px;
+    }
+    &__discount{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #888888;
+    text-decoration-line: line-through;
+}
+}
+/* НАВЕДЕНИЕ И СТИЛИ ДЛЯ КНОПОК*/
+
+.nav__item:hover{
+    animation: pulse 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.main__link:hover{
+    animation: pulse 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+.link-ct__item:hover{
+    animation: pulse 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
+.product:hover {
+  transform: scale(1.01);
+   border-color: rgba(136, 136, 136, 0.15);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.product {
+   
+   border-radius: 4px;
+   transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+    cursor: pointer;
+}
+
+
+.product__link:hover { 
+
+    transform: scale(1.3); 
+}
+
+.order__link1:hover{
+     transform: scale(1.02);
+     color: rgb(0 0 0 / 70%);;
+     
+
+}
+.order__btn-cart{
+    cursor: pointer;
+       transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+       box-shadow 0.3s ease,
+       border-color 0.3s ease,
+       background-color 0.3s ease,
+       color 0.3s ease;
+
+}
+.order__btn-cart:hover {
+    background-color: #000000;    /* чёрный фон */
+    color: #FFFFFF;               /* белый текст */
+    border-color: #000000;        /* чтобы граница не «прыгала» цветом */
+    transform: scale(1.02);       /* лёгкое увеличение — не ломает соседей */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.order__btn-purchase{
+    cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+       box-shadow 0.3s ease,
+       border-color 0.3s ease,
+       background-color 0.3s ease,
+       color 0.3s ease;
+}
+.order__btn-purchase:hover {
+     background-color: #000000;    /* чёрный фон */
+    color: #FFFFFF;               /* белый текст */
+    border-color: #000000;        /* чтобы граница не «прыгала» цветом */
+    transform: scale(1.02);       /* лёгкое увеличение — не ломает соседей */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.order__form-cart {
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+       box-shadow 0.3s ease,
+       border-color 0.3s ease,
+       background-color 0.3s ease,
+       color 0.3s ease;
+}
+
+
+.order__form-cart:hover {
+    color: rgb(0 0 0 / 70%);
+  animation: lift 0.35s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  background-color: #000000;    /* чёрный фон */
+    color: #FFFFFF;               /* белый текст */
+    border-color: #000000;        /* чтобы граница не «прыгала» цветом */
+    transform: scale(1.02);       /* лёгкое увеличение — не ломает соседей */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes lift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    transform: translate3d(0, -6px, 0) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+.catalog-link:hover{
+   color: #676464;
+    transform: scale(1.01); 
+}
+
+.footer__list1:hover { 
+    color: #150f0f;
+    transform: scale(1.05); 
+}
+.footer__list2:hover { 
+    color: #150f0f;
+    transform: scale(1.05); 
+}
+.footer__div-info2:hover { 
+    color: #150f0f;
+    transform: scale(1.4); 
+}
+
+
+
+/* НАВЕДЕНИЕ И СТИЛИ ДЛЯ КНОПОК*/
+
+.catalog-link{
+    color: black;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 68px;
+    margin-top: 31px;
+    display: inline-block;
+    
+}
+.footer{ 
+    background-color: #f7f6f6;
+    padding-top: 23px;
+    padding-bottom: 29px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+    
+.footer__content{
+    width: 759px;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+}
+.footer__div2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    }
+.footer__div-info{
+    display: flex;
+    gap: 20px;
+    }
+.footer__div-info2{
+    cursor: pointer;
+}
+.footer__div-info2 {
+  color: #888888;                /* базовый цвет текста и иконки */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;  /* плавная смена цвета */
+}
+
+.footer-icon {
+  width: 24px;
+  height: 14px;                 /* точно под viewBox, чтобы не было «прыжков» */
+  fill: currentColor;           /* иконка берёт цвет родителя */
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.footer__div-info2:hover {
+  color: #150f0f;               /* новый цвет при наведении */
+}
+
+.footer__div-info2:hover .footer-icon {
+  transform: scale(1.05);       /* лёгкое увеличение без сдвига соседей */
+}
+.footer__div1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    }
+.footer__item{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000; 
+    }
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    }
+.footer__list1{
+    color: #888888;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    }
+.footer__list2{
+    color: #888888;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    
+}
+
+
+a.footer__item:hover{
+    text-decoration: underline;
+}
+.footer__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.footer__text{
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 8px;
+    line-height: 100%;
+    }
+    
+.footer__input{
+    background: #ffffff;
+    border: 1px solid #DED7D769;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    padding: 12px 17px;
+    width: 100%;
+    margin-bottom: 8px;
+    cursor: pointer;
+    }
+.footer__input::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.footer__input::-webkit-input-placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.footer__input:-moz-placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.footer__input::-moz-placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.footer__input:-ms-input-placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+/* Анимация */
+
+@keyframes pulse-placeholder {
+  0% {
+    color: #888;
+    opacity: 0.8;
+  }
+  100% {
+    color: #17232c;
+    opacity: 1;
+  }
+}
+
+
+input::-webkit-input-placeholder {
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  color: transparent;
+}
+.footer__button {
+  max-width: 260px;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(222, 215, 215, 0.41);
+  border-radius: 16px;
+  border: 1px solid #DED7D769;
+  cursor: pointer;
+  font-size: 12px;
+  color: #150f0f;                /* базовый цвет текста */
+  
+  /* переход делаем здесь, на обычном состоянии */
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+              box-shadow 0.3s ease;
+}
+
+.footer__button:hover {
+  background-color: #000000;    /* чёрный фон */
+  color: #ffffff;               /* белый текст */
+  transform: translateY(-1px);
+  box-shadow: -4px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+@import 'tablet';
+@import '_mobil';

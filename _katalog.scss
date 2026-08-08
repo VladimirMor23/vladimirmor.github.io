@@ -1,0 +1,496 @@
+.catalog-pg{
+    background-image: url(./img/catalog-pg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a,
+input,
+button{
+   font-family: "Montserrat", "Arial" ; 
+}
+body{
+    font-size: 16px;
+     font-family: "Montserrat", "Arial" ; 
+}
+
+   
+
+.block{
+    padding-top: 127px;
+    padding-bottom: 127px;
+    color: #FFFFFF;
+    &__title{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    max-width: 792px;
+    margin-bottom: 16px;
+    
+}
+}
+.link{
+    padding-top: 70px;
+    padding-bottom: 47px;
+}
+
+.link-ct__item{
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+.link-ct__item1:not(:last-child)::after{ 
+    content: " /";
+    margin: 0 5px;
+    color: #000000; }
+
+.fulter-button-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.conteiner{
+    display: flex;
+}
+
+
+.fulter-button::-webkit-details-marker{
+    display: none;
+}    
+
+
+details[open] > .fulter-button{
+    content: "";
+    border: 2px solid black;
+    
+}
+
+    
+.fulter-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-size: 19px;          /* исправлено: было 10px, потом 19px — оставь 19px */
+    font-weight: 500;
+    width: 182px;
+    padding-left: 23px;
+    display: block;
+    position: relative;
+    background-image: url(./img3/Polygon\ 1.png);
+    background-position: calc(100% - 35px);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;        /* обязательно для адаптива */
+}
+.fulter-button:hover{
+    color: #676464;
+    transform: scale(1.01); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.filtering-form{
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    top: calc(100% + 14px);
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    width: 525px;
+    height: 548px;
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+}
+.filtering-form__content-wapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px 65px;
+    width: 445px;
+    height: 468px;
+   
+
+}
+.filtering-form__fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    border: none;
+}
+.filtering-form__fieldset-type{
+    padding-right: 40px;
+}
+.filtering-form__legend{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.radio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.radio__input{
+    display: none;
+}
+
+.radio__label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+
+}
+.radio__label:hover{
+    color: #676464;
+    transform: scale(1.01); 
+}
+.radio__label::before{
+    content: "";
+    border: 1px solid #888888;
+    position: absolute;
+    border-radius: 60px;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    background-color: #FFFFFF;
+
+}
+.radio__input:checked + .radio__label::before{
+    border-color: #000000;
+    background-image: url(./img3/Vector\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.range{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.range__input{
+    width: 190px;
+    height: 10px;
+    overflow: hidden;
+    outline: none;
+
+}
+.range__input,
+.range__input::-webkit-slider-runnable-track,
+.range__input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: none;
+}
+.range__input::-webkit-slider-runnable-track{
+    width: 200px;
+    height: 1px;
+    background: #000000 ;
+}
+.range__input:nth-child(2)::-webkit-slider-runnable-track{
+    background: none;
+}
+.range__input::-webkit-slider-thumb{
+    position: relative;
+    height: 8px;
+    width: 8px;
+    margin-top: -4px;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+.range__input::-webkit-slider-thumb:active{
+    cursor: pointer;
+    
+}
+.range__slider{
+    font-family: sans-serif;
+    font-size: 14px;
+    position: relative;
+    width: 200px;
+    display: inline-block;
+    margin-top: -5px;
+}
+.range__slider input{
+    position: absolute;
+}
+.range__input:nth-child(1)::-webkit-slider-thumb{
+    z-index: 2;
+}
+.color-options{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 190px;
+    gap: 14px;
+}
+.color-options__checkbox{
+    width: 15px;
+    height: 15px;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox__input{
+    display: none;
+}
+.checkbox__lebel{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+}
+.checkbox__lebel:hover{
+    color: #676464;
+    transform: scale(1.01); 
+}
+
+.checkbox__lebel::before{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #888888;
+    position: absolute;
+    left: 0;
+    background-color: #FFFFFF;
+}
+.checkbox__input:checked + .checkbox__lebel::before{
+    background-image: url(./img3/Vector\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #000000;
+}
+.checkbox__lebel-withe::before{
+    background-color: white;
+    border-color: #888888;
+}
+.checkbox__lebel-black::before{
+    background-color: black;
+    border-color: black;
+}
+.checkbox__lebel-gray::before{
+    background-color:#888888;
+    border-color: #888888;
+}
+.checkbox__lebel-red::before{
+    background-color: red;
+    border-color: red;
+}
+.checkbox__lebel-orange::before{
+    background-color: orange;
+    border-color: orange;
+}
+.checkbox__lebel-yellow::before{
+    background-color: yellow;
+    border-color: yellow;
+}
+.checkbox__lebel-green::before{
+    background-color: green;
+    border-color: green;
+}
+.checkbox__lebel-blue-green::before{
+    background-color: #1CCC97;
+    border-color: #1CCC97;
+}
+
+.checkbox__lebel-lightblue::before{
+    background-color: lightblue;
+    border-color: lightblue;
+}
+.checkbox__lebel-blue::before{
+    background-color: blue;
+    border-color: blue;
+}
+.checkbox__lebel-purple::before{
+    background-color: purple;
+    border-color: purple;
+}
+.checkbox__lebel-backlash::before{
+    background-color: #9D0DB5;
+    border-color: #9D0DB5;
+}
+.checkbox__lebel-pink::before{
+    background-color: #D89AFF;
+    border-color: #D89AFF;
+}
+.checkbox__lebel-pipl::before{
+    background-color: #FF65A6;
+    border-color: #FF65A6;
+}
+.checkbox__input:checked + .checkbox__lebel-black::before{
+    background-image: url(./img3/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+    
+}
+.checkbox__input:checked + .checkbox__lebel-green::before{
+    background-image: url(./img3/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+
+}
+.checkbox__input:checked + .checkbox__lebel-blue::before{
+    background-image: url(./img3/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+    
+}
+.checkbox__input:checked + .checkbox__lebel-purple::before{
+    background-image: url(./img3/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+}
+.checkbox__input:checked + .checkbox__lebel-gray::before{
+    background-image: url(./img3/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+    
+}
+.checkbox__input:checked + .checkbox__lebel-purple::before{
+    background-image: url(./img3/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+}
+
+.filtering-form__button {
+  padding: 0;
+  gap: 10px;
+  position: relative;
+  left: 127px;                /* ⚠️ лучше убрать или заменить на margin/flex — ломается на мобильных */
+  font-size: 16px;
+  width: 190px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #040404;
+  background-color: transparent;   /* или любой начальный цвет */
+  color: #040404;                  /* базовый цвет текста */
+
+  transition: background-color 0.3s ease,
+  color 0.3s ease,
+  transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+  box-shadow 0.3s ease;
+}
+
+.filtering-form__button:hover {
+  background-color: #000000;      /* чёрный фон */
+  color: #ffffff;                 /* белый текст */
+  transform: translateY(-1px);
+  box-shadow: -4px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.select-css2{
+    appearance: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 40px 10px 15px;
+  font-size: 16px;
+  border-radius: 20px;
+  background-image: url(./img3/Polygon\ 1.png);
+  background-position: calc(100% - 20px);
+  background-size: 20 px;
+  background-repeat: no-repeat;
+  width: 227px;
+  padding-left: 23px;
+  height: 40px;
+  cursor: pointer;
+}
+.select-css2:hover{
+    color: #676464;
+    transform: scale(1.01); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.product1{
+    display: grid;
+    grid-template-columns: repeat(12, 4fr);
+    gap: 30px;
+
+}
+.product{
+    width: 379px;
+    grid-column: span 4;
+    position: relative;
+}
+.product__butoton, .product__butoton-card{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+}
+.product__butoton{
+    padding-right: 21px;
+}
+.product__butoton-card, .product__butoton{
+    display: none;
+}
+.product:hover .product__butoton{
+    display: block;
+}
+.product:hover .product__butoton-card{
+    display: block;
+
+}
+.product__img{
+    display: block;
+    
+    &__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    }
+
+    &__description{
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    margin-bottom: 13px;
+    }
+    &__price{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+    }
+    &__box-price{
+    display: flex;
+    gap: 32px;
+    }
+    &__discount{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #888888;
+    text-decoration-line: line-through;
+}
+}
