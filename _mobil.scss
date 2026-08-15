@@ -3,13 +3,22 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+    .cart{
+        display: flex;
+        justify-content: space-around;
+    }
     .header{
         padding-top: 32px;
         border-bottom: none;
     }
+    .logo {
+    margin-top: 0px;
+    } 
     .logo__img{
         width: 99px;
+        margin-bottom: 6px;
     }
+    
     .nav__item{
         display: none;
     }
@@ -21,9 +30,6 @@
         justify-content: center;
         align-items: center;
         gap: 32px;
-    }
-    .logo__img{
-        width: 99px;
     }
     .main{
         margin-top: 29px;
@@ -71,17 +77,24 @@
         color: #000000;
     }
      &__div {
+                /* margin-top: 32px; */
         margin-top: 32px;
         display: grid;
-        gap: 16px;
-        grid-template-columns: repeat(4, 1fr);
+        row-gap: 16px;
+        column-gap: 0px;
+        /* gap: 0px; */
+        grid-template-columns: 1fr;
+        /* display: grid; */
+        /* gap: 16px; */
+        /* grid-template-columns: 1fr; */
+        justify-items: center;
     }
-     &__box1{
+     &__rest{
         width: 343px;
         height: 243px;
         font-size: 28px;
     }
-     &__box2{
+     &__world{
         width: 343px;
         height: 243px;
         font-size: 28px;
@@ -285,8 +298,12 @@
         padding-top: 32px;
         border-bottom: none;
     }
+    .logo {
+    margin-top: 0px;
+    }
     .logo__img{
         width: 99px;
+        margin-bottom: 6px;
     }
     .nav__item{
         display: none;
@@ -298,13 +315,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 32px;
+        gap: 29px;
+        padding-bottom: 13px;
     }
     .logo__img{
         width: 99px;
     }
     .main{
-        margin-top: 29px;
+        margin-top: 21px;
     &__title{
         width: 100%;
         max-width: 343px;
@@ -315,6 +333,7 @@
         line-height: 1.2;
         text-align: center;
         color: #FFFFFF;
+        margin-bottom: 12px;
     }
     &__text{
         width: 100%;
@@ -354,16 +373,18 @@
      &__div {
         margin-top: 32px;
         display: grid;
-        gap: 16px;
-        grid-template-columns: repeat(4, 1fr);
+         row-gap: 16px;
+        column-gap: 0px;
+        /* gap: 0px; */
+        grid-template-columns: 1fr;
     }
-     &__box1{
+     &__rest{
         max-width: 343px;
         width: 100%;
         height: 243px;
         font-size: 28px;
     }
-     &__box2{
+     &__world{
         max-width: 343px;
         width: 100%;
         height: 243px;
@@ -435,7 +456,7 @@
     .footer__list{
         margin-bottom: 70px;
     }
-    .footer__div2 {
+    .footer__contacts {
         display: flex;
         flex-direction: column;
         gap: 10px;

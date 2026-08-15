@@ -3,6 +3,7 @@
   background-image: url(./img/catalog-pg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 400px;
 }
 
 a,
@@ -472,7 +473,7 @@ details[open] > .fulter-button {
   position: relative;
 }
 
-.product__butoton, .product__butoton-card {
+.product__button, .product__button-card {
   background: none;
   border: none;
   padding: 0;
@@ -482,19 +483,19 @@ details[open] > .fulter-button {
   right: 10px;
 }
 
-.product__butoton {
+.product__button {
   padding-right: 21px;
 }
 
-.product__butoton-card, .product__butoton {
+.product__button-card, .product__button {
   display: none;
 }
 
-.product:hover .product__butoton {
+.product:hover .product__button {
   display: block;
 }
 
-.product:hover .product__butoton-card {
+.product:hover .product__button-card {
   display: block;
 }
 
@@ -814,7 +815,7 @@ body {
 }
 
 .main {
-  margin-top: 140px;
+  margin-top: 60px;
   padding-bottom: 363px;
   color: #FFFFFF;
 }
@@ -876,7 +877,7 @@ a.nav__item:hover {
 
 /*ЗАголовок МЕБЕЛЬ ДЛЯ ...*/
 .mebel {
-  padding-top: 63px;
+  padding-top: 77px;
 }
 .mebel__title {
   font-weight: 600;
@@ -911,29 +912,28 @@ a.nav__item:hover {
   color: #FFFFFF;
   font-weight: 600;
 }
-.mebel__box1 {
+.mebel__rest {
   background-image: url(img/mebel1.jpg);
 }
-.mebel__box2 {
+.mebel__world {
   background-image: url(./img/mebel2.jpg);
 }
-.mebel__box3 {
+.mebel__kitchens {
   background-image: url(./img/mebel3.jpg);
 }
-.mebel__box4 {
+.mebel__kids {
   background-image: url(./img/mebel4.jpg);
 }
-.mebel__box5 {
+.mebel__bath {
   background-image: url(./img/mebel5.jpg);
 }
 
 /*Заголовку h2(Специальные предложения*/
 .card {
-  margin-top: 54px;
+  margin-top: 77px;
 }
 .card__content {
   gap: 30px;
-  margin-bottom: 53px;
   display: grid;
   grid-template-columns: repeat(12, 4fr);
 }
@@ -943,7 +943,7 @@ a.nav__item:hover {
   line-height: 100%;
   color: #000000;
   flex-wrap: wrap;
-  padding-bottom: 32px;
+  padding-bottom: 39px;
 }
 
 .product {
@@ -1101,17 +1101,17 @@ a.nav__item:hover {
   transform: scale(1.01);
 }
 
-.footer__list1:hover {
+.footer__telephone:hover {
   color: #150f0f;
   transform: scale(1.05);
 }
 
-.footer__list2:hover {
+.footer__mails:hover {
   color: #150f0f;
   transform: scale(1.05);
 }
 
-.footer__div-info2:hover {
+.footer__maps:hover {
   color: #150f0f;
   transform: scale(1.4);
 }
@@ -1122,48 +1122,56 @@ a.nav__item:hover {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 68px;
-  margin-top: 31px;
+  margin-bottom: 72px;
+  padding-top: 74px;
   display: inline-block;
 }
 
 .footer {
   background-color: #f7f6f6;
-  padding-top: 23px;
+  padding-top: 30px;
   padding-bottom: 29px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.footer-logo {
-  display: flex;
-  align-items: center;
-}
-
+/*
+.footer-logo{
+    display: flex;
+    align-items: center;
+}*/
 .footer__content {
-  width: 759px;
+  max-width: 789px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.footer__div2 {
+.footer__info {
+  display: flex;
+  max-width: 335px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer__contacts {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 11px;
 }
 
 .footer__div-info {
   display: flex;
-  gap: 20px;
+  gap: 18px;
 }
 
-.footer__div-info2 {
+.footer__maps {
   cursor: pointer;
 }
 
-.footer__div-info2 {
+.footer__maps {
   color: #888888; /* базовый цвет текста и иконки */
   text-decoration: none;
   display: inline-flex;
@@ -1172,7 +1180,7 @@ a.nav__item:hover {
   transition: color 0.3s ease; /* плавная смена цвета */
 }
 
-.footer-icon {
+.footer__icon {
   width: 24px;
   height: 14px; /* точно под viewBox, чтобы не было «прыжков» */
   fill: currentColor; /* иконка берёт цвет родителя */
@@ -1180,15 +1188,15 @@ a.nav__item:hover {
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.footer__div-info2:hover {
+.footer__maps:hover {
   color: #150f0f; /* новый цвет при наведении */
 }
 
-.footer__div-info2:hover .footer-icon {
+.footer__maps:hover .footer__icon {
   transform: scale(1.05); /* лёгкое увеличение без сдвига соседей */
 }
 
-.footer__div1 {
+.footer__menu {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1209,7 +1217,7 @@ a.nav__item:hover {
   gap: 10px;
 }
 
-.footer__list1 {
+.footer__telephone {
   color: #888888;
   font-weight: 500;
   font-size: 14px;
@@ -1217,7 +1225,7 @@ a.nav__item:hover {
   text-decoration: none;
 }
 
-.footer__list2 {
+.footer__mails {
   color: #888888;
   font-weight: 500;
   font-size: 14px;
@@ -1239,7 +1247,7 @@ a.footer__item:hover {
   font-size: 12px;
   line-height: 15px;
   color: #000000;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
   line-height: 100%;
 }
 
@@ -1252,7 +1260,7 @@ a.footer__item:hover {
   font-size: 12px;
   line-height: 18px;
   color: #000000;
-  padding: 12px 17px;
+  padding: 11px 6px;
   width: 100%;
   margin-bottom: 8px;
   cursor: pointer;
@@ -1335,10 +1343,10 @@ input:focus::-webkit-input-placeholder {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
   }
-  .mebel__box1 {
+  .mebel__rest {
     height: 268px;
   }
-  .mebel__box2 {
+  .mebel__world {
     height: 268px;
   }
   .mebel__box {
@@ -1426,12 +1434,20 @@ input:focus::-webkit-input-placeholder {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .cart {
+    display: flex;
+    justify-content: space-around;
+  }
   .header {
     padding-top: 32px;
     border-bottom: none;
   }
+  .logo {
+    margin-top: 0px;
+  }
   .logo__img {
     width: 99px;
+    margin-bottom: 6px;
   }
   .nav__item {
     display: none;
@@ -1444,9 +1460,6 @@ input:focus::-webkit-input-placeholder {
     justify-content: center;
     align-items: center;
     gap: 32px;
-  }
-  .logo__img {
-    width: 99px;
   }
   .main {
     margin-top: 29px;
@@ -1494,17 +1507,25 @@ input:focus::-webkit-input-placeholder {
     color: #000000;
   }
   .mebel__div {
+    /* margin-top: 32px; */
     margin-top: 32px;
     display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(4, 1fr);
+    row-gap: 16px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    /* gap: 0px; */
+    grid-template-columns: 1fr;
+    /* display: grid; */
+    /* gap: 16px; */
+    /* grid-template-columns: 1fr; */
+    justify-items: center;
   }
-  .mebel__box1 {
+  .mebel__rest {
     width: 343px;
     height: 243px;
     font-size: 28px;
   }
-  .mebel__box2 {
+  .mebel__world {
     width: 343px;
     height: 243px;
     font-size: 28px;
@@ -1699,8 +1720,12 @@ input:focus::-webkit-input-placeholder {
     padding-top: 32px;
     border-bottom: none;
   }
+  .logo {
+    margin-top: 0px;
+  }
   .logo__img {
     width: 99px;
+    margin-bottom: 6px;
   }
   .nav__item {
     display: none;
@@ -1712,13 +1737,14 @@ input:focus::-webkit-input-placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 29px;
+    padding-bottom: 13px;
   }
   .logo__img {
     width: 99px;
   }
   .main {
-    margin-top: 29px;
+    margin-top: 21px;
   }
   .main__title {
     width: 100%;
@@ -1730,6 +1756,7 @@ input:focus::-webkit-input-placeholder {
     line-height: 1.2;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 12px;
   }
   .main__text {
     width: 100%;
@@ -1768,16 +1795,19 @@ input:focus::-webkit-input-placeholder {
   .mebel__div {
     margin-top: 32px;
     display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(4, 1fr);
+    row-gap: 16px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    /* gap: 0px; */
+    grid-template-columns: 1fr;
   }
-  .mebel__box1 {
+  .mebel__rest {
     max-width: 343px;
     width: 100%;
     height: 243px;
     font-size: 28px;
   }
-  .mebel__box2 {
+  .mebel__world {
     max-width: 343px;
     width: 100%;
     height: 243px;
@@ -1844,7 +1874,7 @@ input:focus::-webkit-input-placeholder {
   .footer__list {
     margin-bottom: 70px;
   }
-  .footer__div2 {
+  .footer__contacts {
     display: flex;
     flex-direction: column;
     gap: 10px;
